@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>评论</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #out{
+            width: 512px;
+            height:320px;
+            background-repeat: no-repeat;
+            background-size: 512px 320px;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+        #in{
+            margin-left: 76px;
+            margin-top: 30px;
+        }
+        hr{
+            outline: none;
+            width:400px;
+            margin: 10px auto;
+        }
+
+        .out-ul-li{
+            list-style: none;
+            margin: 0 auto;
+            overflow: hidden;
+            width: 480px;
+            border: 1px dashed #858585;
+        }
+        .out-ul-li a{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div id="out">
+    <div id="in">
+        <textarea name="" id="input" cols="50" rows="10"></textarea>
+        <button id="btn">发布</button>
+    </div>
+    <hr >
+    <ul id="out-ul">
+
+    </ul>
+</div>
+<script>
+    window.onload = function () {
+        var btn = document.getElementById("btn");
+        btn.onclick = function () {
+        //    获取textarea的输入内容
+            var input = document.getElementById("input");
+            var text = input.value;
+        //    判断是否为空
+            if(text.length === 0){
+                alert("评论内容不能为空！");
+                return;
+            }
+        //    创建li标签
+            var newli = document.createElement("li");
+            //修改li标签的内容为textarea的内容
+            newli.innerHTML = text+'<a href="javascript:void (0)">删除</a>';
+            newli.className = 'out-ul-li';
+            var ul_li = document.getElementById("out-ul");
+            ul_li.appendChild(newli);
+        //  清空输入框的内容
+            input.value = '';
+        //    删除评论
+            var delbtn = document.getElementsByTagName("a");
+            for (var i = 0; i < delbtn.length; i++) {
+                delbtn[i].onclick = function () {
+                    this.parentNode.remove();
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
