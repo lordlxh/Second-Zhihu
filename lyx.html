@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="PersonalWebsite.js" language="JavaScript"></script>
+  <title>梁嘚嘚儿的个人主页</title>
+  <style>
+  .city{
+float: left;
+margin: 5px;
+padding: 15px;
+width: 300px;
+height: 300px;
+border: 1px solid white;
+color: white;
+} 
+
+    header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:50px;	 
+    
+}
+    nav {
+    line-height:30px;
+    background-color:#eeeeee;
+   
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+  
+        .tittle
+        {
+            background-color: black;color: white;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+   
+  </style>
+
+        <link rel="icon" type="image/png" href="https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4136768169,2664038455&fm=26&gp=0.jpg">
+</head>
+<body background="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3892709593,3088332512&fm=26&gp=0.jpg" >
+  <header> 这是梁艺馨的个人主页！！</header>
+  <nav>
+     <a href="#">Home<br>个人主页</a></li>
+     <br>
+     <br>
+     <br>
+   
+     <br>
+     <br>
+      <a href="#">Menu<br>访问菜单</a></li>
+      <br>
+     
+     <br><br>
+     
+    
+     <br>
+      <a href="#">Collection<br>查看收藏</a></li>
+      <br>
+      
+      <br>
+     <br><br>
+     <br><br>
+    
+     
+      <a href="#" onmouseover="MakeItVisiable();">Settings<br>设置</a>
+      <br>
+      <br>
+      <br>
+    
+     <br><br>
+     
+     <br>
+     <a href="#">修改密码</a></ul>
+     
+      <br>
+    </ul>
+  </nav>
+  <div class="city">
+    <h2>个人介绍</h2>
+    <p>看到背景这个帅气的男人了吗？我的！！！！！！！！！！！！！</p>
+    </div>
+    
+    <div class="city">
+    <h2>***********</h2>
+    <p>其实你点击一下鼠标会有小心心出现</p>
+    </div>
+    
+    <div class="city">
+    <h2>************************</h2>
+    <p>太宰好可！！！！我可以！！！！双黑我可以！！！！</p>
+    </div>
+  <script src="shubiao.js" type="text/javascript"></script>
+ 
+    <script>
+      (function(window,document,undefined){
+			var hearts = [];
+			window.requestAnimationFrame = (function(){
+				return window.requestAnimationFrame ||
+				window.webkitRequestAnimationFrame ||
+				window.mozRequestAnimationFrame ||
+				window.oRequestAnimationFrame ||
+				window.msRequestAnimationFrame ||
+				function (callback){
+					setTimeout(callback,1000/60);
+				}
+			})();
+			init();
+			function init(){
+				css(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}");
+				attachEvent();
+				gameloop();
+			}
+			function gameloop(){
+				for(var i=0;i<hearts.length;i++){
+					if(hearts[i].alpha <=0){
+						document.body.removeChild(hearts[i].el);
+						hearts.splice(i,1);
+						continue;
+					}
+					hearts[i].y--;
+					hearts[i].scale += 0.004;
+					hearts[i].alpha -= 0.013;
+					hearts[i].el.style.cssText = "left:"+hearts[i].x+"px;top:"+hearts[i].y+"px;opacity:"+hearts[i].alpha+";transform:scale("+hearts[i].scale+","+hearts[i].scale+") rotate(45deg);background:"+hearts[i].color;
+				}
+				requestAnimationFrame(gameloop);
+			}
+			function attachEvent(){
+				var old = typeof window.onclick==="function" && window.onclick;
+				window.onclick = function(event){
+					old && old();
+					createHeart(event);
+				}
+			}
+			function createHeart(event){
+				var d = document.createElement("div");
+				d.className = "heart";
+				hearts.push({
+					el : d,
+					x : event.clientX - 5,
+					y : event.clientY - 5,
+					scale : 1,
+					alpha : 1,
+					color : randomColor()
+				});
+				document.body.appendChild(d);
+			}
+			function css(css){
+				var style = document.createElement("style");
+				style.type="text/css";
+				try{
+					style.appendChild(document.createTextNode(css));
+				}catch(ex){
+					style.styleSheet.cssText = css;
+				}
+				document.getElementsByTagName('head')[0].appendChild(style);
+			}
+			function randomColor(){
+				return "rgb("+(~~(Math.random()*255))+","+(~~(Math.random()*255))+","+(~~(Math.random()*255))+")";
+			}
+		})(window,document);
+
+    </script>
+    
+    
+    
+    
+    <script src="a.js"></script>
+</body>
+</html>
