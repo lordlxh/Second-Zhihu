@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sign</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: burlywood;
+        }
+        .signform {
+            font-family: 微软雅黑;
+            position: fixed;
+            background-color: white;
+            top: 20%;
+            left: 30%;
+            width: 500px;
+            height: 400px;
+            border-radius: 1em;
+            text-align: center;
+            z-index: 999;
+        }
+        #registerform {
+            height: 450px;
+        }
+        .signclose {
+            cursor: pointer;
+            float: right;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+            height: 35px;
+            width: 35px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        #registerloading{
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            left: 410px;
+            top: 90px;
+        }
+        .signinput {
+            border-radius: 0.2em;
+            width: 280px;
+            height: 200px;
+            border: none;
+            background-color:#f2f2f2;
+            font-size: 14px;
+        }
+        .userdiv {
+            position: relative;
+            margin-top: 80px;
+        }
+        .pwddiv {
+            position: relative;
+            margin-top: 20px;
+        }
+        .postdiv {
+            position: relative;
+            margin-top: 20px;
+        }
+        .postdiv input {
+            cursor: pointer;
+            color: white;
+            font-size: 26px;
+            border: none;
+            border-radius: 0.4em;
+            width: 280px;
+            height: 45px;
+            background-color:#4CAF50;
+        }
+    </style>
+</head>
+<body onload="welcome()">
+<div>
+    <button id="displaysign" onclick="start()">点击提问</button>
+</div>
+<form class="signform" id="signform" style="display: none" method="post" action="http://localhost/put question.php">
+    <div class="signclose">
+        <img src="image/signclose.ico" width="35px" height="35px" onclick="signclose()">
+    </div>
+    <div class="userdiv">
+    <input type="hidden" id="invisible" name="queser">
+    <textarea id="user" class="signinput" type="text" name="main" ></textarea>
+    </div>
+    <div class="postdiv">
+    <input type="submit" value="提交问题" >
+    </div>
+</form>
+</body>
+<script src="tanchuang/signformchange.js"></script>
+</html>
