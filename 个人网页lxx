@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		.top
+		{
+			width: 100%;
+			height: 40px;
+			background-color: black;
+			color:white;
+        }
+		.top1
+		{
+			color: white;
+			font-size: 30px;
+        }
+		.top2
+		{
+			text-decoration:none;
+			color: white;
+		}
+		.model
+		{
+			width: 80%;
+			margin: 0 auto;
+			background-color: white;
+			height: 600px;
+
+		}
+		.model1
+		{
+			width: 80%;
+			height: 240px;
+			border-style:solid;
+			border-color:#CCCCCC;
+			border-width:thin;
+			
+
+		}
+		.model11
+		{
+			width: 100%;
+			height: 120px;
+			border-style:solid;
+			border-color:#CCCCCC;
+			border-width:thin;
+		}
+		.model12
+		{
+			width: 120px;
+			height: 150px;
+			border-style:solid;
+			border-color:#CCCCCC;
+			border-width:thin;
+			margin-left:25px;
+			margin-top:-100px;
+		}
+		.model13
+		{
+			font-size: 24px;
+		}
+		.model14
+		{
+            text-decoration:none;
+            color: #0085ff;
+            font-size: 15px;
+		}
+		.model2
+		{
+			margin-top:7px;
+			width:75%;
+			float:left;
+			display:inline;
+			font-weight:thin;
+
+		}
+		.model3
+		{			
+			margin-top:7px;
+			margin-left:1%;
+
+			width:23%;
+			float:left;
+			display:inline;
+			font-weight:bold;
+
+		}
+		.model121
+		{
+;
+			font-size:18px;
+			font-weight:normal;
+			border-style:solid;
+			border-color:#CCCCCC;
+			border-width:thin;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="top">
+		<span class="top1">Second Zhihu</span>
+		<a class="top2" href="">首页 </a>
+		<a class="top2" href="">有问必答</a>
+		<a class="top2" href="">关于知乎·2</a>
+
+	</div>
+	<div class="model">
+
+		 <div class="model1">
+		 	<img class="model11" src="个人网页 (2).jpg">
+		 	<img class="model12" src="个人网页 (1).jpg">
+		 	<span class="model13" >我是老树树</span>
+		 	<a class="model14" href="">编辑个人资料</a>
+		 </div>
+		 <div>
+		 	<div style="font-weight:bold;font-size: 24px;">问答</div>
+		 	<div>
+		 		<div class="model2">
+		 			   <div class="model21" onclick="window.open('')">问答1
+                       <div>
+                       	   标题
+                       </div>
+		 			   </div>
+		 		       <div class="model21" onclick="window.open('')">问答2
+		 		       <div>
+                       	   标题
+                       </div>
+                       </div>
+		 		       <div class="model21" onclick="window.open('')">问答3
+		 		       	<div>
+                       	   标题
+                       </div>
+                       </div>
+		 		       <div class="model21" onclick="window.open('')">问答4
+		 		       	<div>
+                       	   标题
+                       </div>
+                       </div>
+		 		       <div class="model21" onclick="window.open('')">问答5
+		 		       	<div>
+                       	   标题
+                       </div>
+                       </div>
+		 		       <div class="model21" onclick="window.open('')">问答6
+		 		       	<div>
+                       	   标题
+                       </div>
+                       </div>
+		 	   </div>
+		 	</div>
+		 </div>
+		 <div>
+		 	<div class="model3">
+                       <div class="model21" onclick="window.open('')">收藏</div>
+		 		       <div class="model21" onclick="window.open('')">喜欢</div>
+		 		       <div class="model21" onclick="window.open('')">关注</div>
+
+
+
+		 </div>
+
+	</div>
+
+	
+</body>
+</html>

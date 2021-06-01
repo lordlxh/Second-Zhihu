@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>雾切凉宫的主页</title>
+	<style>
+		.header
+		{
+			width:100%;
+			height:40px;
+			background-color:white;
+			border-bottom-style:solid;
+			border-bottom-color:#CCCCCC;
+			border-width:thin;
+			position:fixed;
+		}
+		.logo
+		{
+			font-size:30px;
+			color:#408CFF;
+		}
+		.headerA
+		{
+			margin-left:25px;
+			color:#CCCCCC;
+			text-decoration:none;
+			font-size:20px;
+		}
+		.headerA:hover
+		{
+			color:black;
+		}
+		.headerA-right
+		{
+			float:right;
+			margin-top:10px;
+			margin-right:17px;
+			color:#CCCCCC;
+			text-decoration:none;
+			font-size:20px;
+		}
+		.headerA-right:hover
+		{
+			color:black;
+		}
+		.mainbody
+		{
+			height:100%;
+			width:75%;
+			display:inline;
+			float:left;
+		}
+		.body1-1
+		{
+			background-color:#999999;
+			height:130px;
+			border-top-style:solid;
+			border-left-style:solid;
+			border-right-style:solid;
+			border-width:thin;
+			border-color:#CCCCCC;
+			position:relative;
+		}
+		.body1-2
+		{
+			background-color:white;
+			height:140px;
+			border-bottom-style:solid;
+			border-left-style:solid;
+			border-right-style:solid;
+			border-width:thin;
+			border-color:#CCCCCC;
+		}
+		.userimage
+		{
+			height:150px;
+			width:150px;
+			margin-top:65px;
+			margin-left:25px;
+			outline-style:solid;
+			outline-color:white;
+			outline-width:5px;
+			outline-color:white;
+			float:left;
+		}
+		.userimage1
+		{
+			height:150px;
+			width:150px;
+			margin-top:65px;
+			margin-left:-150px;
+			outline-style:solid;
+			outline-color:grey;
+			outline-width:5px;
+			outline-color:white;
+			float:left;
+			position:absolute;
+			display:none;
+			opacity:0.6;
+		}
+		.userimage:hover +.userimage1
+		{
+			outline-color:grey;
+			display:inline;
+		}
+		.username
+		{
+			display:inline;
+			float:left;
+			margin-left:25px;
+			margin-top:130px;
+			font-weight:bold;
+			font-size:28px;
+		}
+		.userinfo
+		{
+			margin-left:10px;
+			color:#CCCCCC;
+			font-size:12px;
+		}
+		.infoEdit
+		{
+			padding:5px;
+			border-style:solid;
+			border-color:#408CFF;
+			border-radius:5px;
+			border-width:2px;
+			float:right;
+			color:#408CFF;
+			font-size:10px;
+		}
+		.infoEdit:hover
+		{
+			background-color:#408CFF;
+			color:white;
+		}
+		.body2-1
+		{
+			margin-top:7px;
+			border-style:solid;
+			border-color:#CCCCCC;
+			border-width:thin;
+			width:75%;
+			float:left;
+			display:inline;
+			font-weight:bold;
+		}
+		.body2-1-title
+		{
+			margin-top:5px;
+			border-style:solid;
+			border-width:thin;
+			border-color:#CCCCCC;
+			font-size:18px;
+			font-weight:normal;
+
+		}
+		.body2-1-title:hover
+		{
+			color:#2b4490;
+			font-weight:bold;
+			border-color:#408CFF;
+		}
+		.body2-2
+		{
+			margin-top:7px;
+			margin-left:1%;
+			border-style:solid;
+			border-color:#CCCCCC;
+			border-width:thin;
+			width:23%;
+			float:left;
+			display:inline;
+			font-weight:bold;
+		}
+		.body2-2-title
+		{
+			margin-top:4px;
+			border-style:solid;
+			border-width:thin;
+			border-color:#CCCCCC;
+			font-size:15px;
+			font-weight:normal;
+		}
+		.body2-2-title:hover
+		{
+			color:#2b4490;
+			font-weight:bold;
+			border-color:#408CFF;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<span class="logo">ZH#2</span>
+		<a class="headerA" href="" >首页</a>
+		<a class="headerA" href="" >等你来答</a>
+		<a class="headerA-right" style="" href="">关于我们</a>
+	</div>
+	<div style="padding-top:45px;">
+		<div style="display:inline;width:12%;float:left;color:white;height:100%">a</div>
+		<div class="mainbody">
+			<div class="body1-1">
+				<img class="userimage"src="info.jpg"  alt="头像" title="Arknights-RED">	
+				<img class="userimage1"src="info1.png"  alt="头像" title="Arknights-RED">
+				<span class="username">雾切凉宫</span>	
+			</div>
+			<div class="body1-2"><br><br><br>
+				<span class="userinfo">这个人很懒，什么都没有留下</span>
+				<span class="infoEdit">编辑个人资料</span>
+			</div>
+			<div class="body2-1">
+				<div>我的动态</div>
+				<div class="body2-1-title" onclick="window.open('')">这是标题一
+					<div style="font-size:15px;font-weight:normal;">这是正文1</div>
+				</div>
+				<div class="body2-1-title" onclick="window.open('')">这是标题2
+					<div style="font-size:15px;font-weight:normal;">这是正文2</div>
+				</div>
+				<div class="body2-1-title" onclick="window.open('')">这是标题3
+					<div style="font-size:15px;font-weight:normal;">这是正文3</div>
+				</div>
+				<div class="body2-1-title" onclick="window.open('')">这是标题4
+					<div style="font-size:15px;font-weight:normal;">这是正文4</div>
+				</div>
+				<div class="body2-1-title" onclick="window.open('')">这是标题5
+					<div style="font-size:15px;font-weight:normal;">这是正文5</div>
+				</div>
+			</div>
+			<div class="body2-2">我的收藏
+				<div class="body2-2-title" onclick="window.open('')">收藏1</div>
+				<div class="body2-2-title" onclick="window.open('')">收藏2</div>
+				<div class="body2-2-title" onclick="window.open('')">收藏3</div>
+				<div class="body2-2-title" onclick="window.open('')">收藏4</div>
+				<div class="body2-2-title" onclick="window.open('')">收藏5</div>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
