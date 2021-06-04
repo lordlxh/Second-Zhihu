@@ -1,0 +1,199 @@
+body
+		{
+			background-color:#F6F6F6;
+		}
+		.header
+		{
+			width:100%;
+			height:40px;
+			background-color:white;
+			border-bottom-style:solid;
+			border-bottom-color:#CCCCCC;
+			border-width:thin;
+			position:fixed;
+		}
+		.logo
+		{
+			font-size:30px;
+			color:#408CFF;
+		}
+		.headerA
+		{
+			margin-left:25px;
+			color:#CCCCCC;
+			text-decoration:none;
+			font-size:20px;
+		}
+		.headerA:hover
+		{
+			color:black;
+		}
+		.headerA-right
+		{
+			float:right;
+			margin-top:10px;
+			margin-right:17px;
+			color:#CCCCCC;
+			text-decoration:none;
+			font-size:20px;
+		}
+		.headerA-right:hover
+		{
+			color:black;
+		}
+		.mainbody
+		{
+			height:100%;
+			width:75%;
+			display:inline;
+			float:left;
+		}
+		.body2-1
+		{
+			background-color:white;
+			margin-top:7px;
+			border-style:none;
+			border-color:#CCCCCC;
+			border-width:thin;
+			width:75%;
+			float:left;
+			display:inline;
+			font-weight:bold;
+		}
+		.body2-1-front
+		{
+			display:inline-block;
+			padding:8px 10px;
+			font-size:20px;
+			font-weight:normal;
+		}
+		.body2-1-front:hover
+		{
+
+			color:#2b4490;
+			font-weight:bold;
+		}
+		.body2-1-title
+		{
+			display:inline-block;
+			padding:8px 8px;
+			width:100%;
+			border-style:solid none;
+			border-width:thin;
+			border-color:#CCCCCC;
+			font-size:18px;
+			font-weight:normal;
+		}
+		.body2-1-title:hover
+		{
+			color:#2b4490;
+			border-style:solid;
+			border-color:#408CFF;
+		}
+		.body2-2
+		{
+			list-style-type: none;
+			background-color:white;
+			padding: 0;margin: 0; width: 25%;
+			margin-top: 7px;	margin-left: 76%;
+			overflow: hidden;
+		}
+		.lan{
+			float: left;
+		}
+		.link{
+			text-decoration: none;
+			display: block;	color: black;
+			font-size: 8px;	
+			padding: 10px 14px;
+			text-align: center;
+		}
+		.link:hover{
+			text-decoration: none;
+			display: block;	color: blue;
+			font-size: 8px;	
+			padding: 10px 14px;
+			text-align: center;
+		}
+		.tu{
+			height: 40px; width: 40px;
+		}
+		.comment
+		{
+			font-size:15px;
+			font-weight:normal;
+			color:#CCCCCC;
+			margin-left:20px;
+			display:inline;
+			clip:rect(0,0,0,0);
+		}
+		.comment:hover 
+		{
+			font-weight:bold;
+		}
+		.comment:checked ~ .commentbody
+		{
+			display:block;
+		}
+		.for
+		{
+			display:inline-block;
+			margin:1px 0px 0px 5px;
+			padding:2px 6px;
+			font-size:15px;
+			font-weight:normal;
+			color:#0066FF;
+			background-color:#E5EFFF;
+			position:relative;
+			z-index:4;
+		}
+		.for:hover
+		{
+			font-weight:bold;
+		}
+		.for:visited
+		{
+			color:white;
+
+		}
+		.commentbody
+		{
+			color:#6D6D6D;
+			font-weight:bold;
+			font-size:15px;
+			display:none;
+		}
+		.commentbody-1
+		{
+			color:#6D6D6D;
+			font-weight:normal;
+			font-size:17px;
+		}
+		.commentbody-1:hover
+		{
+			color:#6D6D6D;
+			font-weight:bold;
+		}
+		.textinput
+		{
+			width:75%;
+			height:40px;
+			color:#6D6D6D;
+			border-radius:5px;
+			border-width:thin;
+		}
+		.textinput:focus
+		{
+			border-color:#0066FF;
+			border-width:medium;
+		}
+		.submitbtn
+		{
+			margin-left:10px;
+			height: 40px;
+			width:60px;
+			color:white;
+			background-color:#80B3FF;
+			border:none;
+			border-radius:5px;
+		}

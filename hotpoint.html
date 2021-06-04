@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+    	<style>
+		body
+		{
+			background-color:#F6F6F6;
+		}
+		.header
+		{
+			width:100%;
+			height:40px;
+			background-color:white;
+			border-bottom-style:solid;
+			border-bottom-color:#CCCCCC;
+			border-width:thin;
+			position:fixed;
+		}
+		.logo
+		{
+			font-size:30px;
+			color:#408CFF;
+		}
+		.headerA
+		{
+			margin-left:25px;
+			color:#CCCCCC;
+			text-decoration:none;
+			font-size:20px;
+		}
+		.headerA:hover
+		{
+			color:black;
+		}
+		.headerA-right
+		{
+			float:right;
+			margin-top:10px;
+			margin-right:17px;
+			color:#CCCCCC;
+			text-decoration:none;
+			font-size:20px;
+		}
+		.headerA-right:hover
+		{
+			color:black;
+		}
+		.mainbody
+		{
+			height:100%;
+			width:75%;
+			display:inline;
+			float:left;
+			overflow:hidden;
+		}
+		.body2-1
+		{
+			background-color:white;
+			margin-top:7px;
+			border-style:none;
+			border-color:#CCCCCC;
+			border-width:thin;
+			width:75%;
+			float:left;
+			display:inline;
+			font-weight:bold;
+		}
+		.body2-1-front
+		{
+			display:inline-block;
+			padding:8px 10px;
+			font-size:20px;
+			font-weight:normal;
+		}
+		.body2-1-front:hover
+		{
+
+			color:#2b4490;
+			font-weight:bold;
+		}
+		.hotpoint
+		{
+			width:100%;
+			height:4350px;
+			margin-top:-350px;
+		}
+		.body2-2
+		{
+			list-style-type: none;
+			background-color:white;
+			padding: 0;margin: 0; width: 25%;
+			margin-top: 7px;	margin-left: 76%;
+			overflow: hidden;
+
+		}
+		.body2-2-title
+		{
+			margin-top:4px;
+			border-style:solid;
+			border-width:thin;
+			border-color:#CCCCCC;
+			font-size:15px;
+			font-weight:normal;
+		}
+		.body2-2-title:hover
+		{
+			color:#2b4490;
+			font-weight:bold;
+			border-color:#408CFF;
+		}
+		.lan{
+			float: left;
+		}
+		.link{
+			text-decoration: none;
+			display: block;	color: black;
+			font-size: 8px;	
+			padding: 10px 14px;
+			text-align: center;
+		}
+		.link:hover{
+			text-decoration: none;
+			display: block;	color: blue;
+			font-size: 8px;	
+			padding: 10px 14px;
+			text-align: center;
+		}
+		.tu{
+			height: 40px; width: 40px;
+		}
+	</style>
+        <!--====== Required meta tags ======-->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--====== Title ======-->
+        <title>热榜</title>
+        <!--====== Favicon Icon ======-->
+
+        <link rel="shortcut icon" href="assets/images/logo/logo-1.png" type="image/png">
+        <!--====== Bootstrap css ======-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!--====== Fontawesome css ======-->
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+        <!--====== Fontawesome css ======-->
+        <link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
+        <!--====== Magnific Popup css ======-->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!--====== Slick css ======-->
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <!--====== Default css ======-->
+        <link rel="stylesheet" href="assets/css/default.css">
+        <!--====== Style css ======-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="变色.js"></script>
+    </head>
+    <body>
+        <!--====== Start Header ======-->
+        <div class="preloader">
+            <div class="lds-ellipsis">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!--====== End Header ======-->
+        <!--====== Search From ======-->
+        <div class="modal fade" id="search-modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <form>
+                        <div class="form_group">
+                            <input type="text" class="form_control" placeholder="Search here...">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!--====== Search From ======-->
+        <!--====== Start Header ======-->
+        <header class="header-area header-area-v1" style="background-color:#1b3255" >
+
+            <div class="header-navigation" >
+                <div class="container" >
+                    <div class="nav-container d-flex align-items-center justify-content-between">
+                        <!-- site logo -->
+
+                        <div class="nav-menu">
+                            <!-- Navbar Close Icon -->
+                            <div class="navbar-close">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- nav-menu -->
+                            <nav class="main-menu">
+                                <ul>
+                                    <li class="menu-item" ><a href="index.html"style="color: #FFFFFF">主页</a></li>
+
+                                    <li class="menu-item menu-item-has-children"><a href="contact.html"style="color: #FFFFFF">有问必答</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="service.html"style="color:black">发现</a></li>
+                                            <li><a href="service-details.html"style="color: black">发帖</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a href="about.html" style="color: #FFFFFF">关于我们</a></li>
+                                    <li class="menu-item "><a href="register.html"style="color: #FFFFFF">登录</a>
+
+                                    </li>
+                                    <li class="menu-item"><a href="contact.html"style="color: #FFFFFF">联系我们</a></li>
+                                </ul>
+                            </nav>
+                            <!-- nav pushed item -->
+                            <div class="nav-pushed-item">
+                                <div class="navbar-btn">
+                                    <a href="contact.html" class="main-btn">Get A Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- nav push item -->
+                        <div class="nav-push-item">
+                            <div class="navbar-btn">
+                                <button class="main-btn" id="btn" >提问</button>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </header>
+
+	<div style="padding-top:10px;height:4000px; background-color:#F6F6F6; ">
+		<div style="display:inline;width:12%;float:left;color:white;height:100%">&nbsp</div>
+		<div class="mainbody">
+			<div class="body2-1">
+				<div>
+					<div class="body2-1-front" onclick="window.open('index1.html')">推荐</div>
+					<div class="body2-1-front" onclick="window.open('')">关注</div>
+					<div class="body2-1-front" style="color:#2b4490;font-weight:bold;">热榜</div>
+				</div>
+			<div style="overflow:hidden">
+				<iframe class="hotpoint" src="https://www.bilibili.com/v/popular/rank/all" scrolling="no" frameborder="0"></iframe>
+			</div>
+			</div>
+			<div>
+				<ul class="body2-2">
+					<li class="lan">
+						<a href="#" class="link">
+							<img class="tu" src="./assets/images/blog/回答问题.png"><br/>
+							<p>回答问题</p>
+						</a>
+					</li>
+					<li class="lan">
+						<a href="#" class="link">
+							<img class="tu" src="./assets/images/blog/写文章.png"><br/>
+							<p>写文章</p>
+						</a>
+					</li>
+					<li class="lan">
+						<a href="#" class="link">
+							<img class="tu" src="./assets/images/blog/写想法.png"><br/>
+							<p>写想法</p>
+						</a>
+					</li>
+					<li class="lan">
+						<a href="https://baike.baidu.com/" class="link">
+							<img class="tu" src="./assets/images/blog/百科.png"><br/>
+							<p>百科</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+      <footer class="footer-area" >
+            <div class="footer-top pt-40 pb-40">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="brand-logo">
+                                <a href="#"><img src="assets/images/logo/logo-2.png" class="img-fluid" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="social-box">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-widget-area pt-110 pb-110">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="widget contact-info-widget">
+                                <h4 class="widget-title">联系我</h4>
+                                <div class="info-box mb-20">
+                                    <p><i class="fab fa-qq"></i><a href="qq:3387902891">3387903981</a></p>
+                                </div>
+                                <div class="info-box">
+                                    <h5 class="mb-20">所在地址</h5>
+                                    <p><i class="fas fa-map-marker-alt"></i>上海市 奉贤区<br>海思路999号</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="widget quick-link-widget">
+                                <h4 class="widget-title">快速链接</h4>
+                                <ul class="widget-link">
+                                  <li><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i> 主页</a></li>
+                                    <li><a href="contact.html"><i class="fa fa-angle-right" aria-hidden="true"></i> 联系我们</a></li>
+                                      <li><a href="https://www.bilibili.com/"><i class="fa fa-angle-right" aria-hidden="true"></i> 哔哩哔哩</a></li>
+                        <li><a href="https://jwc.ecust.edu.cn/"><i class="fa fa-angle-right" aria-hidden="true"></i> 华东理工大学教务处 </a></li>
+    				    <li><a href="https://sso.ecust.edu.cn/authserver/login"><i class="fa fa-angle-right" aria-hidden="true"></i> 华东理工大学信息门户</a></li>
+    				    <li><a href="https://www.icourse163.org/"><i class="fa fa-angle-right" aria-hidden="true"></i> 中国大学慕课网</a></li>
+                     </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="widget opening-hours-widget">
+                                <h4 class="widget-title">工作时间</h4>
+                                <div class="info-box">
+                                    <p>周一- 周五</p>
+                                    <p>8:00 AM - 9:00 PM</p>
+                                </div>
+                                <div class="info-box">
+                                    <p>Monday - Friday</p>
+                                    <p>10:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="widget newsletters-widget">
+                                <h4 class="widget-title">加入我们</h4>
+                                <p>欢迎加入我们Second-ZhiHu团队 请留下您宝贵的邮箱以便我们联系您</p>
+                                <form class="newsletters-form">
+                                    <div class="form_group">
+                                        <input type="text" class="form_control" placeholder="Enter Your Email" name="email" required>
+                                        <button class="icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bootom-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="copyright-text">
+                                <p>版权所有©华东理工大学<a target="_blank" href="https://www.ecust.edu.cn/">华东理工大学官网</a></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="footer-nav">
+                                <ul>
+                                    <li><a href="index.html">主页</a></li>
+                                    <li><a href="login.html">登录</a></li>
+                                    <li><a href="about.html">关于我们</a></li>
+                                    <li><a href="contact.html">联系我们</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer><!--====== End Footer ======-->
+        <!--====== back-to-top ======-->
+        <a href="#" class="back-to-top" ><i class="fas fa-angle-up"></i></a>
+        <!--====== Jquery js ======-->
+        <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <!--====== Bootstrap js ======-->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <!--====== Slick js ======-->
+        <script src="assets/js/slick.min.js"></script>
+        <!--====== Counterup js ======-->
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!--====== Waypoints js ======-->
+        <script src="assets/js/waypoints.min.js"></script>
+        <!--====== Magnific Popup js ======-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--====== Isotope js ======-->
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <!--====== Imagesloaded js ======-->
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <!--====== WoW js ======-->
+        <script src="assets/js/wow.min.js"></script>
+        <!--====== Main js ======-->
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
