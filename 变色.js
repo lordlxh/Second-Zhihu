@@ -28,3 +28,7 @@ function c(id) {
 				id.style.background="#E5EFFF"
 			};
 }
+function cnt(a){
+	alert(getElementById("cntbdy"));
+	getElementById("cntbdy").style.display="none";
+}
