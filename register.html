@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <script src="common.js"></script>
+<script>
+    //1.完成用户名称的重复性验证（异步，检查数据库中是否已存在当前用户名）
+    //异步请求数据，因为还要输入下面的数据，不能跳转到php页面去验证
+    function check_name(){
+        //1.创建XHR对象 创建异步对象
+        var xhr=createXhr(); //调用common.js中封装好的函数
+
+        //2.创建请求
+        var uname=$("uname").value;
+        //获取输入框里的值，把用户名传到后端，再查询
+        var url="check-name.php?uname="+uname;
+        xhr.open("get",url,true);
+        //查询用户名称，用get方法就行，去数据库查询，看用户名是否已经存在
+        //查询用get就行，向服务器提交数据时再用post
+
+        //3.设置回调函数，监听状态
+        //参数true，异步
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4 && xhr.status==200){
+            //判断状态，xhr请求状态为4，表示接收响应数据成功；当status的值是200的时候，表示服务器已经正确的处理请求以及给出响应
+            $("uname-show").innerHTML=xhr.responseText;
+            //提示内容
+            };
+        };
+
+            //4.发送请求
+            xhr.send(null);
+            //get请求，参数写null
+        }
+
+//2.定义函数，判断两次密码是否一致
+//当确认密码框失去焦点时，验证两次输入的密码是否一致，并给出提示（通过/密码不一致）
+    //给upwd 和 cpwd 加id
+    function check_pwd(){
+        //1.获取两个密码框的值
+        var upwd=$("upwd").value;
+        //$("upwd") 获取id值，函数在common.js中封装
+        var cpwd=$("cpwd").value;
+        if(upwd==cpwd && upwd!=""){
+        //判断是否相等，且密码不为空
+            $("pwd-show").innerHTML="通过";
+            //提示到span中，用innerHTML
+        }else{
+            $("pwd-show").innerHTML="两次密码输入不一致";
+        };
+    };
+</script>
+
+</head>
+<body>
+<form action="register.php" method="post">
+<!--
+1.注册信息不用异步加载，直接提交表单；失去焦点时验证用户名密码是否正确，再用ajax异步加载数据；
+2.form表单作用：收集用户信息并提交给服务器；
+3.属性action作用：定义表单被提交时发生的动作，通常定义的是服务器上处理程序的地址(url)，提交到注册的php文件，默认提交给本页；
+4.属性method作用：指定表单数据的提交方式。
+  get(默认值)——明文提交，待提交的数据会显示在地址栏上；
+  post——隐式提交，提交的数据不会显示在地址栏上。
+-->
+
+    <!--控件提交信息，嵌套在form标记里面-->
+    <!--登录名称-文本框-->
+    <p>
+        登录名称：<input type="text" id="uname" name="uname" onblur="check_name()">
+        <!--提示用户名是否一致的位置-->
+        <span id="uname-show"></span>
+        <!--提交数据时提交name属性的值，点击submit时，name属性通过表单form提交数据，同步提交数据-->
+    </p>
+
+    <!--登录密码-密码框-->
+    <p>
+        登录密码：<input type="password" id="upwd" name="upwd">
+        <!--name值与id值可以重复，name值用于提交给服务器，id值在前端用-->
+    </p>
+
+    <!--确认密码-密码框-->
+    <p>
+        确认密码：<input type="password" id="cpwd" name="cpwd" onblur="check_pwd()">
+        <!--onblur为失去焦点属性，调用判断密码是否一致的函数-->
+        <!--用于提示两次密码是否一致的位置-->
+        <span id="pwd-show"></span>
+    </p>
+
+    <!--用户邮箱-电子邮件-->
+    <p>
+        电子邮箱：<input type="email" name="email">
+        <!--type="email" 可做简单的格式验证-->
+    </p>
+
+    <!--联系方式-文本框-->
+    <p>
+        手机号码：<input type="text" name="phone">
+    </p>
+
+    <!--用户性别-下拉框-->
+    <p>
+        用户性别：
+        <select name="gender">
+            <option value="1">男</option>
+            <option value="0">女</option>
+        </select>
+        <!--下拉列表和选项，往数据库中插入的是value的值-->
+    </p>
+
+    <!--注册按钮-->
+    <p>
+        <input type="submit" value="注册">
+        <!--submit按钮的表单提交数据，是同步访问数据的方式-->
+    </p>
+</form>
+
+</body>
+</html>
