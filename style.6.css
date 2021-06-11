@@ -1,0 +1,53 @@
+body a{text-decoration:none;}
+/*Head*/
+head {background-image:ur1("");
+        background-repeat:no-repeat;
+		min-height:10vh;}
+.navbar{position:absolute;
+        top:0;
+		left:0;display:flex;
+		width:100%;
+		padding:10px 2px;
+		align-items:center;
+       }
+.navbar u1{flex:1;
+           text-align:right;}
+.navbar u1 li{list-style:none;
+              display:inline-block;
+              margin:0 30px;}
+
+.head-content h1{font-size:7vmin;
+                  margin-bottom:30px;
+				  margin-top:7rem;
+				  color:green;}
+.head-content p{margin-bottom:30px;
+                  color:red;}
+.home{padding:10px 20px;
+     background:orange;
+     border-radius:50px;}
+.about{padding:10px 20px;
+     background:orange;
+     border-radius:50px;}
+.services{padding:10px 20px;
+     background:orange;
+     border-radius:50px;}	 
+.ctn{padding:10px 20px;
+     background:orange;
+     border-radius:50px;}
+.ctn:hover{background:red;}
+
+.like{padding:10px 20px;
+            border-radius:50px;
+			margin-right:30px;}
+.like:hover{background:lightgreen;
+border:none;}
+.review{padding:10px 20px;
+            border-radius:50px;
+			margin-right:30px;}
+.review:hover{background:lightblue;
+                  border:none;}	
+.collection{padding:10px 20px;
+            border-radius:50px;
+			margin-right:30px;}
+.collection:hover{background:pink;
+                  border:none;}				  
