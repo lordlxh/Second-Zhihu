@@ -1,0 +1,56 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 18/10/2020 17:24
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+font-style: normal;
+}
+
+.flaticon-mechanic:before { content: "\f100"; }
+.flaticon-car-service:before { content: "\f101"; }
+.flaticon-vehicle:before { content: "\f102"; }
+.flaticon-car-wash:before { content: "\f103"; }
+.flaticon-car-wash-1:before { content: "\f104"; }
+.flaticon-polisher:before { content: "\f105"; }
+.flaticon-car-service-1:before { content: "\f106"; }
+.flaticon-repair:before { content: "\f107"; }
+.flaticon-trophy:before { content: "\f108"; }
+.flaticon-approved:before { content: "\f109"; }
+.flaticon-car:before { content: "\f10a"; }
+.flaticon-sport-car:before { content: "\f10b"; }
+.flaticon-delivery-truck:before { content: "\f10c"; }
+.flaticon-taxi:before { content: "\f10d"; }
+.flaticon-car-1:before { content: "\f10e"; }
+.flaticon-eco-car:before { content: "\f10f"; }
+.flaticon-off-road:before { content: "\f110"; }
+.flaticon-envelope:before { content: "\f111"; }
+.flaticon-maps-and-flags:before { content: "\f112"; }
+.flaticon-phone-call:before { content: "\f113"; }
+.flaticon-help:before { content: "\f114"; }
+.flaticon-search-interface-symbol:before { content: "\f115"; }
+.flaticon-right-quote:before { content: "\f116"; }
+.flaticon-cogs:before { content: "\f117"; }
+.flaticon-left-quote:before { content: "\f118"; }
+.flaticon-light-bulb:before { content: "\f119"; }
