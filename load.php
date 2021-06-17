@@ -12,14 +12,14 @@
 		die('Could not connect: ' . mysqli_error($connect));
 	}
 	if(!mysqli_select_db($connect,"yongHu")){//如果数据库不存在
-		echo "<script  language = 'javascript' type = 'text/javascript'>alert('用户名不存在1');window.location.href = 'http://localhost/secondzhihu/denglu.html';</script>";
+		echo "用户名不存在1";
 	}
 		$data=array();$biao=mysqli_query($connect,"show tables;");
 		while($row=mysqli_fetch_assoc($biao)){
 		$data+=$row;
 		}unset($biao,$row);
 		if(!in_array(strtolower("zhangHao"), $data)){//如果账号列表不存在
-			echo "<script  language = 'javascript' type = 'text/javascript'>alert('用户名不存在2');window.location.href = 'http://localhost/secondzhihu/denglu.html';</script>";
+			echo "用户名不存在2";
 		}
 		else{
 			$data=array();$yongHuMing=mysqli_query($connect,"SELECT uname FROM zhangHao");
@@ -27,7 +27,7 @@
 				$data[]=$row['uname'];
 			}unset($yongHuMing,$row);//print_r($data);//取出所有用户名
 			if(!in_array("$uname",$data)){unset($data);
-				echo "<script  language = 'javascript' type = 'text/javascript'>alert('用户名不存在3');window.location.href = 'http://localhost/secondzhihu/denglu.html';</script>";
+				echo "用户名不存在3";
 			}
 			else{
 				$pworddata=mysqli_query($connect,"SELECT pword FROM zhangHao WHERE uname='$uname'");
@@ -36,7 +36,7 @@
 					echo "密码错误";
 				}
 				else{
-					$url="http://localhost/secondzhihu/index1.php?uname=".$uname;
+					$url="http://localhost/a pop-up window.html?uname=".$uname;
 					echo " <script  language = 'javascript' type = 'text/javascript'> ";
 					echo " window.location.href = '$url' ";
 					echo " </script> ";
